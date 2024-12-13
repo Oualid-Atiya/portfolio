@@ -4,7 +4,7 @@ const menuBtn = document.getElementById('menu-btn');
 const nav = document.querySelector('nav');
 menuBtn.addEventListener('click' , () => {
     mainCtn.style = 'height:100vh;overflow-y:hidden';
-    nav.style = 'margin-right:initial';
+    nav.style = 'margin-right:initial;z-index: 999;';
 })
 xBtn.addEventListener('click' , () => {
     nav.style = 'margin-right:-500px';

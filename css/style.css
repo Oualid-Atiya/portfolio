@@ -8,7 +8,7 @@ body{
 }
 :root{
     --main-color  :#000;
-    --text-color:#a7a6a6;
+    --text-color:#6e6b6b;
 }
 /* ///////////////////////////////////// */
 /* Start Global Styles */
@@ -206,20 +206,76 @@ nav a:hover{
 }
 .about-content{
     width: 50%;
-    height: 80%;
+    height: 85%;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 black;
+    padding: 20px;
 }
 .about-content .title{
     font-size:25px ;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     font-weight: 600;
     color: var(--main-color);
 }
 .about-content p{
     color: var(--text-color);
     line-height: 2;
-    font-size: 18px;
+    font-size: 17px;
 }
 /* End About Page */
+
+/* ///////////////////////////////////// */
+/* Start Projects Page */
+.projects-page{
+    padding: 20px 150px;
+}
+.projects-page .title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.ctn-projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.project{
+    width: 45%;
+    height: 380px;
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+}
+.project .ctn-img{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+.project .ctn-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-title{
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+.project-desc{
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.project .ctn-btn{
+    background-color: var(--main-color);
+    padding :12px 15px ;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+
+}
+/* End Projects Page */
 /* ///////////////////////////////////// */
 /* Start Media Queries */
 @media (max-width: 768px){
@@ -337,6 +393,14 @@ nav a:hover{
         text-align: justify;
     }
     /* End About */
+    /* Start Project */
+    .projects-page{
+        padding: 20px;
+    }
+    .project {
+        width: 100%;
+    }
+    /* End Project */
 }
 /* End Media Queries */
 /* ///////////////////////////////////// */
