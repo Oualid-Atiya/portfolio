@@ -9,7 +9,7 @@ xBtn.addEventListener('click' , () => {
 })
 
 var typed = new Typed('.input',{
-    strings :['Front End Developer','Full Stack Developer','Back End Developer'] ,
+    strings :['Front End Developer','Back End Developer'] ,
     typeSpeed : 70,
     backSpeed  : 55,
     loop : true

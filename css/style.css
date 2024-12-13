@@ -79,10 +79,6 @@ nav a:hover{
     padding: 50px 150px;
 }
 .ctn-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 250px;
     width: 50%;
 }
 .ctn-job-title span{
@@ -102,7 +98,7 @@ nav a:hover{
     color: rgb(167, 166, 166);
     font-size: 15px;
     margin-bottom: 20px;
-    line-height: 30px;
+    line-height: 25px;
 }
 .ctn-btns a{
     border-radius: 5px;
@@ -110,6 +106,7 @@ nav a:hover{
     transition: all ease 0.4s;
     color: white;
     cursor: pointer;
+    display: inline-block;
 }
 #contact-btn{
     background-color: var(--main-color);
@@ -152,6 +149,32 @@ nav a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.ctn-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+.ctn-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 25px;
+    background:var(--main-color);
+    border-radius: 50px;
+    padding: 5px;
+    transition: all 0.2s;
+
+}
+.ctn-icons a:hover{
+    transform: scale(1.09);
+}
+.ctn-job-title,.ctn-desc,.ctn-icons{
+    margin-bottom: 30px;
 }
 /* End Section */
 /* ///////////////////////////////////// */
