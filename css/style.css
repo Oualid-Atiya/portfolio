@@ -48,6 +48,10 @@ header{
     font-size: 30px;
     font-weight: 400;
 }
+.ctn-logo h2 a span{
+    color: var(--strong-color);
+    font-weight: 700;
+}
 /* End Logo Part */
 /* ///////////////////////////////////// */
 /* Start navBar */
@@ -251,12 +255,15 @@ nav a:hover{
         width: 100%;
         margin-bottom: 30px;
     }
-    .ctn-btns{
-        text-align: center;
-    }
     #contact-btn {
         margin-right: 20px;
     }
+    .ctn-icons{
+        width: 65%;
+    }
+    .ctn-job-title, .ctn-desc, .ctn-icons {
+        margin-bottom: 20px;
+    }    
     /* End Home */
 }
 /* End Media Queries */
