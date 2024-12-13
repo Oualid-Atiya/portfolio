@@ -7,10 +7,8 @@ body{
     font-family: "Roboto", sans-serif;
 }
 :root{
-    --main-color  :#10285f;
-    --strong-color:#138dff;
+    --main-color  :#000;
     --text-color:#a7a6a6;
-    --links-color:#1f1f1f;
 }
 /* ///////////////////////////////////// */
 /* Start Global Styles */
@@ -27,7 +25,6 @@ button{
 /* Start Main Container */
 .main-container{
     overflow-x: hidden;
-    height: 100vh;
 }
 /* End Main Container */
 /* ///////////////////////////////////// */
@@ -49,7 +46,7 @@ header{
     font-weight: 400;
 }
 .ctn-logo h2 a span{
-    color: var(--strong-color);
+    color: var(--main-color);
     font-weight: 700;
 }
 /* End Logo Part */
@@ -87,7 +84,7 @@ nav a:hover{
 }
 .ctn-job-title span{
     font-weight: 800;
-    color: var(--strong-color);
+    color: var(--main-color);
     font-size: 45px;
     width: 390px;
     line-height: 60px;
@@ -99,7 +96,7 @@ nav a:hover{
     color: var(--main-color);
 }
 .ctn-desc p{
-    color: rgb(167, 166, 166);
+    color: var(--text-color);
     font-size: 15px;
     margin-bottom: 20px;
     line-height: 25px;
@@ -182,6 +179,48 @@ nav a:hover{
 }
 /* End Section */
 /* ///////////////////////////////////// */
+/* Start About Page */
+#about-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 150px;
+    width: 100%;
+    height: 100vh;
+}
+.image-part{
+    width: 50%;
+}
+.image-part .ctn-img{
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    background: var(--main-color);
+    border-radius: 65px 50px 50% 138px;
+    overflow: hidden;
+}
+.image-part .ctn-img img{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+.about-content{
+    width: 50%;
+    height: 80%;
+}
+.about-content .title{
+    font-size:25px ;
+    margin-bottom: 60px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.about-content p{
+    color: var(--text-color);
+    line-height: 2;
+    font-size: 18px;
+}
+/* End About Page */
+/* ///////////////////////////////////// */
 /* Start Media Queries */
 @media (max-width: 768px){
     /* Start Header */
@@ -215,7 +254,7 @@ nav a:hover{
         font-size: 22px;
     }
     .ctn-links a {
-        border-bottom: 1px solid var(--strong-color);
+        border-bottom: 1px solid var(--main-color);
         width: 100%;
         text-align: center;
         padding-bottom: 15px;
@@ -227,7 +266,7 @@ nav a:hover{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid var(--strong-color);
+        border-bottom: 1px solid var(--main-color);
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
@@ -263,8 +302,41 @@ nav a:hover{
     }
     .ctn-job-title, .ctn-desc, .ctn-icons {
         margin-bottom: 20px;
-    }    
+    }  
+    .ctn-job-title span{
+        font-size: 33px;
+    }  
     /* End Home */
+    /* ////////////////////////////////// */
+    /* Start About */
+    #about-page{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .image-part {
+        width: 100%;
+        height: 45%;
+        margin-bottom: 20px;
+    }
+    .image-part .ctn-img {
+        width: 100%;
+        height: 100%;
+    }
+    .image-part .ctn-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .about-content .title {
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .about-content p {
+        text-align: justify;
+    }
+    /* End About */
 }
 /* End Media Queries */
 /* ///////////////////////////////////// */
