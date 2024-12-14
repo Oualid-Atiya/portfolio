@@ -73,7 +73,7 @@ nav a:hover{
 
 /* End navBar */
 /* ///////////////////////////////////// */
-/* Start Section */
+/* Start home */
 .home-page{
     display: flex;
     align-items: center;
@@ -177,7 +177,7 @@ nav a:hover{
 .ctn-job-title,.ctn-desc,.ctn-icons{
     margin-bottom: 30px;
 }
-/* End Section */
+/* End home */
 /* ///////////////////////////////////// */
 /* Start About Page */
 #about-page{
@@ -201,6 +201,7 @@ nav a:hover{
     border-radius: 65px 50px 50% 138px;
     overflow: hidden;
     box-shadow: -10px -10px 0 #fff;
+    border: 1px solid white;
 }
 .image-part .ctn-img img{
     width: 70%;
@@ -225,6 +226,7 @@ nav a:hover{
     color: white;
     line-height: 2;
     font-size: 17px;
+    text-align: justify;
 }
 /* End About Page */
 
@@ -232,6 +234,7 @@ nav a:hover{
 /* Start Projects Page */
 #projects-page{
     padding: 20px 150px;
+    margin-bottom: 30px;
 }
 #projects-page .title{
     text-align: center;
@@ -295,11 +298,12 @@ nav a:hover{
 }
 .ctn-form .title{
     font-size: 24px;
+    text-align: center;
 }
 .ctn-form form{
     margin-top: 30px;
 }
-.ctn-form form input,textarea,button{
+.ctn-form form input,textarea{
     min-width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
@@ -312,6 +316,10 @@ nav a:hover{
 .ctn-form button{
     background-color: var(--main-color);
     color:white;
+    padding:10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
 }
 /* End Contact Page */
 /* ///////////////////////////////////// */
@@ -405,7 +413,7 @@ nav a:hover{
     /* Start About */
     #about-page{
         flex-direction: column;
-        padding: 20px;
+        padding: 40px 20px;
         height: initial;
     }
     .image-part {
@@ -437,6 +445,7 @@ nav a:hover{
     /* Start Project */
     #projects-page{
         padding: 20px;
+        margin-bottom: 20px;
     }
     .project {
         width: 100%;
