@@ -20,11 +20,13 @@ var typed = new Typed('.input',{
     startDelay: 500,
     backDelay: 2000,
 })
-
-const navlinks = document.querySelectorAll('.ctn-links a');
-navlinks.forEach(link => {
-    link.addEventListener('click', () => {
-        nav.style = 'margin-right:-500px';
-        mainCtn.style = 'height:initial;overflow-y:initial';
+if (window.matchMedia("(max-width: 768px)").matches) {
+    const navlinks = document.querySelectorAll('.ctn-links a');
+    navlinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.style = 'margin-right:-500px';
+            mainCtn.style = 'height:initial;overflow-y:initial';
+        })
     })
-})
+    window.history.pushState(null, '', `/`);
+}
